@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link ref="stylesheet" href="{% static 'css/style.css' %}" />
+</head>
+<body>
+
+<hr>
+<h1>Header</h1>
+<hr>
+
+{% block mainblock%}
+{% endblock%}
+
+{% include 'polls/footer.html' %}
+</body>
+</html>
